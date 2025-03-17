@@ -2,6 +2,3 @@
 <?php
 
 require_once "/home/lapik/php-project-45/vendor/autoload.php";
-
-echo "Welcome to the Brain Games!\n";
-
