@@ -13,12 +13,15 @@
     },
     "bin": [
 	
-	"bin/brain-games"
+	"bin/brain-games",
+    "bin/brain-even"
 	
     ],
     "autoload": {
        "files": [
-	   "src/cli.php"
+	   "src/Cli.php",       
+       "src/BrainEven/Run.php",
+       "src/BrainEven/BrainEvenFunctions.php"
        ]
     },
     "require-dev": {

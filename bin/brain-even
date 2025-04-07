@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . "/../vendor/autoload.php";
+
+use function PhpProject45\BrainEven\Run\run;
+use function PhpProject45\BrainEven\BrainEvenFunctions\greetings;
+
+$name = greetings();
+run($name);
