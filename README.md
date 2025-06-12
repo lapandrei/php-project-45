@@ -20,3 +20,5 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=lapandrei_php-project-45&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=lapandrei_php-project-45)
 
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=lapandrei_php-project-45&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=lapandrei_php-project-45)
+
+https://asciinema.org/a/mwfltTd5P5Gql3BHAfbr1ixVL
