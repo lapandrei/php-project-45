@@ -21,6 +21,11 @@
 
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=lapandrei_php-project-45&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=lapandrei_php-project-45)
 
+Brain-Even game demonstration:
 https://asciinema.org/a/mwfltTd5P5Gql3BHAfbr1ixVL
 
+Brain-Calc game demonstration:
 https://asciinema.org/a/PFfqY4tJN9VKWunoE5dplqbtF
+
+Brain-Gcd game demonstration:
+https://asciinema.org/a/vi6qnaT9DEcJf3Rzr7wmzJzRZ
