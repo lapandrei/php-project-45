@@ -26,5 +26,5 @@ function engine($name, $prefix)
 function showWrongAnswer($answer, $name, $rightAnswer)
 {
     line("{$answer} is wrong answer ;(. Correct answer was {$rightAnswer}.");
-    line("Let's try again, {$name}");
+    line("Let's try again, {$name}!");
 }
