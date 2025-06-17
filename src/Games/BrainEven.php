@@ -18,7 +18,7 @@ function getQuestion()
 {
     $randValue = mt_rand(0, 1000);
     line("Question: {$randValue}");
-    return strval($randValue);
+    return strval(getRightAnswer($randValue));
 }
 
 function getRightAnswer($randValue)

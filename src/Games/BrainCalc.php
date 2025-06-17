@@ -25,11 +25,10 @@ function getQuestion()
     ];
     $randKey = array_rand($signsArray);
     line("Question: {$firstOperand} {$randKey} {$secondOperand} ");
-    $result = $signsArray[$randKey];
-    return strval($result);
+    return strval(getRightAnswer($randKey, $signsArray));
 }
 
-function getRightAnswer($randValue)
+function getRightAnswer($randKey, $signsArray)
 {
-    return $randValue;
+    return $signsArray[$randKey];
 }

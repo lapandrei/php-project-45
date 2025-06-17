@@ -19,12 +19,12 @@ function getQuestion()
     $firstOperand = mt_rand(1, 40);
     $secondOperand = mt_rand(1, 40);
     line("Question: {$firstOperand} {$secondOperand}");
-    return strval(findGcd($firstOperand, $secondOperand));
+    return strval(getRightAnswer($firstOperand, $secondOperand));
 }
 
-function getRightAnswer($randValue)
+function getRightAnswer($firstOperand, $secondOperand)
 {
-    return $randValue;
+    return findGcd($firstOperand, $secondOperand);
 }
 
 function findGcd($first, $second)

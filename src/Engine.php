@@ -10,11 +10,9 @@ function engine($name, $prefix)
     $i = 0;
     $answer = '';
     $getQuestion = $prefix . '\getQuestion';
-    $getRightAnswer = $prefix . '\getRightAnswer';
     while ($i < 3) {
-        $randValue = $getQuestion();
+        $rightAnswer = $getQuestion();
         $answer = prompt("Answer");
-        $rightAnswer = $getRightAnswer($randValue);
         if ($answer !== $rightAnswer) {
             showWrongAnswer($answer, $name, $rightAnswer);
             return;

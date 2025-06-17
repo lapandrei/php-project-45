@@ -23,11 +23,6 @@ function getQuestion()
     return strval($progression[$missElement]);
 }
 
-function getRightAnswer($randValue)
-{
-    return $randValue;
-}
-
 function createProgression()
 {
     $progression = [];
