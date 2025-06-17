@@ -17,7 +17,7 @@ function run(): void
 function getQuestion()
 {
     $firstOperand = mt_rand(1, 40);
-    $secondOperand = mt_rand(1, 40);    
+    $secondOperand = mt_rand(1, 40);
     line("Question: {$firstOperand} {$secondOperand}");
     return strval(findGcd($firstOperand, $secondOperand));
 }
@@ -28,9 +28,10 @@ function getRightAnswer($randValue)
 }
 
 function findGcd($first, $second)
-{   $max = max($first, $second);
-    $min = min($first, $second);     
-    while ($min !== 0) {        
+{
+    $max = max($first, $second);
+    $min = min($first, $second);
+    while ($min !== 0) {
         $remainder = $max % $min;
         $max = $min;
         $min = $remainder;
