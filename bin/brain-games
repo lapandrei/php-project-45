@@ -13,3 +13,4 @@ if (file_exists($autoLoadPath1)) {
 }
 
 echo 'Welcome to the Brain Games!';
+echo 'May I have your name?';
