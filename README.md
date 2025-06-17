@@ -32,3 +32,6 @@ https://asciinema.org/a/vi6qnaT9DEcJf3Rzr7wmzJzRZ
 
 Brain-Progression demonstration:
 https://asciinema.org/a/lFuJcsRn47TkAFQFHagT19V0P
+
+Brain-Prime demonstration:
+https://asciinema.org/a/Fj07EZCk1DZxB6okYKHPMcm0k
