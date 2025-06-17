@@ -13,6 +13,6 @@ if (file_exists($autoLoadPath1)) {
     require_once $autoLoadPath2;
 }
 
-line('Welcome to the Brain Game!');
+line('Welcome to the Brain Games!');
 $name = prompt('May I have your name?');
 line("Hello, %s!", $name);
