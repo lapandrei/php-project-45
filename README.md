@@ -29,3 +29,6 @@ https://asciinema.org/a/PFfqY4tJN9VKWunoE5dplqbtF
 
 Brain-Gcd game demonstration:
 https://asciinema.org/a/vi6qnaT9DEcJf3Rzr7wmzJzRZ
+
+Brain-Progression demonstration:
+https://asciinema.org/a/lFuJcsRn47TkAFQFHagT19V0P
