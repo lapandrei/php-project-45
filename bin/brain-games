@@ -12,4 +12,4 @@ if (file_exists($autoLoadPath1)) {
     require_once $autoLoadPath2;
 }
 
-greetings();
+echo 'Welcome to the Brain Games!';
