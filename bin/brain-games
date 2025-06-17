@@ -1,7 +1,8 @@
 #!/usr/bin/env php
 <?php
 
-use function Hexlet\Code\Cli\greetings;
+use function cli\line;
+use function cli\prompt;
 
 $autoLoadPath1 = __DIR__.'/../../../autoload.php';
 $autoLoadPath2 = __DIR__.'/../vendor/autoload.php';
@@ -12,5 +13,6 @@ if (file_exists($autoLoadPath1)) {
     require_once $autoLoadPath2;
 }
 
-echo 'Welcome to the Brain Games!';
-echo 'May I have your name?';
+line('Welcome to the Brain Game!');
+$name = prompt('May I have your name?');
+line("Hello, %s!", $name);
