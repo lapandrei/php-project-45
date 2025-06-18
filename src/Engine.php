@@ -11,7 +11,12 @@ function engine(string $name, string $prefix): void
     $answer = '';
     $getQuestion = $prefix . '\getQuestion';
     while ($i < 3) {
-        $rightAnswer = $getQuestion();
+        if (is_callable($getQuestion)){
+            $rightAnswer = $getQuestion();
+        } else {
+            echo 'Something gone wrong, sorry.';
+            return;
+        }        
         $answer = prompt("Answer");
         if ($answer !== $rightAnswer) {
             showWrongAnswer($answer, $name, $rightAnswer);
