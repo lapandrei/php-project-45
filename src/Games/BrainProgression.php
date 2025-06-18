@@ -17,7 +17,7 @@ function run(): void
 function getQuestion(): string
 {
     $progression = createProgression();
-    $max = count($progression) - 1;
+    $max = count($progression) === 0 ? 0 : count($progression) - 1;
     $missElement = random_int(0, $max);
     $questionLine = createQuestionLine($progression, $missElement);
     line("Question: {$questionLine}");
