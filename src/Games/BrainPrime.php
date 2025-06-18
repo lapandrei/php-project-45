@@ -16,7 +16,7 @@ function run(): void
 
 function getQuestion(): string
 {
-    $randValue = random_int(0, 100);
+    $randValue = mt_rand(0, 100);
     line("Question: {$randValue}");
     return strval(getRightAnswer($randValue));
 }
