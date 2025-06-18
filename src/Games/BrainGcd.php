@@ -16,8 +16,8 @@ function run(): void
 
 function getQuestion(): string
 {
-    $firstOperand = mt_rand(1, 40);
-    $secondOperand = mt_rand(1, 40);
+    $firstOperand = random_int(1, 40);
+    $secondOperand = random_int(1, 40);
     line("Question: {$firstOperand} {$secondOperand}");
     return strval(getRightAnswer($firstOperand, $secondOperand));
 }
