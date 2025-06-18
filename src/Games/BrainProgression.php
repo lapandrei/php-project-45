@@ -17,11 +17,7 @@ function run(): void
 function getQuestion(): string
 {
     $progression = createProgression();
-<<<<<<< HEAD
     $missElement = random_int(0, (count($progression) - 1));
-=======
-    $missElement = mt_rand(0, (count($progression) - 1));
->>>>>>> remotes/origin/main
     $questionLine = createQuestionLine($progression, $missElement);
     line("Question: {$questionLine}");
     return strval($progression[$missElement]);
