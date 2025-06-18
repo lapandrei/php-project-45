@@ -14,14 +14,14 @@ function run(): void
     engine($name, $prefix);
 }
 
-function getQuestion()
+function getQuestion(): string
 {
     $randValue = mt_rand(0, 1000);
     line("Question: {$randValue}");
     return strval(getRightAnswer($randValue));
 }
 
-function getRightAnswer($randValue)
+function getRightAnswer(int $randValue): string
 {
     return $randValue % 2 === 0 ? "yes" : "no";
 }

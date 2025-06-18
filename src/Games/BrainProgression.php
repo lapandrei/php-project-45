@@ -14,7 +14,7 @@ function run(): void
     engine($name, $prefix);
 }
 
-function getQuestion()
+function getQuestion(): string
 {
     $progression = createProgression();
     $missElement = mt_rand(0, count($progression) - 1);
@@ -23,19 +23,19 @@ function getQuestion()
     return strval($progression[$missElement]);
 }
 
-function createProgression()
+function createProgression(): array
 {
     $progression = [];
-    $lprogLenth = mt_rand(5, 10);
+    $progLenth = mt_rand(5, 10);
     $start = mt_rand(1, 100);
     $step = mt_rand(1, 10);
-    for ($i = 0; $i < $lprogLenth; $i++) {
+    for ($i = 0; $i < $progLenth; $i++) {
         $progression[] = $start + $i * $step;
     }
     return $progression;
 }
 
-function createQuestionLine($array, $missElement)
+function createQuestionLine(array $array, int $missElement): string
 {
     $result = [];
     foreach ($array as $key => $element) {

@@ -14,19 +14,19 @@ function run(): void
     engine($name, $prefix);
 }
 
-function getQuestion()
+function getQuestion(): string
 {
     $randValue = mt_rand(0, 100);
     line("Question: {$randValue}");
     return strval(getRightAnswer($randValue));
 }
 
-function getRightAnswer($randValue)
+function getRightAnswer( int $randValue): string
 {
     return isPrime($randValue) ? "yes" : "no";
 }
 
-function isPrime($value)
+function isPrime(int $value): bool
 {
     if ($value === 0) {
         return false;

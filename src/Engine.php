@@ -5,7 +5,7 @@ namespace Hexlet\Code\Engine;
 use function cli\line;
 use function cli\prompt;
 
-function engine($name, $prefix)
+function engine(string $name, string $prefix): void
 {
     $i = 0;
     $answer = '';
@@ -23,7 +23,7 @@ function engine($name, $prefix)
     line("Congratulations, {$name}!");
 }
 
-function showWrongAnswer($answer, $name, $rightAnswer)
+function showWrongAnswer(string $answer, string $name, string $rightAnswer): void
 {
     line("{$answer} is wrong answer ;(. Correct answer was {$rightAnswer}.");
     line("Let's try again, {$name}!");

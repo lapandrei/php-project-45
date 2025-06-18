@@ -14,7 +14,7 @@ function run(): void
     engine($name, $prefix);
 }
 
-function getQuestion()
+function getQuestion(): string
 {
     $firstOperand = mt_rand(1, 40);
     $secondOperand = mt_rand(1, 40);
@@ -28,7 +28,7 @@ function getQuestion()
     return strval(getRightAnswer($randKey, $signsArray));
 }
 
-function getRightAnswer($randKey, $signsArray)
+function getRightAnswer(string $randKey, array $signsArray): int
 {
     return $signsArray[$randKey];
 }

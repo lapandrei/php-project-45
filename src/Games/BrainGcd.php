@@ -14,7 +14,7 @@ function run(): void
     engine($name, $prefix);
 }
 
-function getQuestion()
+function getQuestion(): string
 {
     $firstOperand = mt_rand(1, 40);
     $secondOperand = mt_rand(1, 40);
@@ -22,12 +22,12 @@ function getQuestion()
     return strval(getRightAnswer($firstOperand, $secondOperand));
 }
 
-function getRightAnswer($firstOperand, $secondOperand)
+function getRightAnswer(int $firstOperand, int $secondOperand): int
 {
     return findGcd($firstOperand, $secondOperand);
 }
 
-function findGcd($first, $second)
+function findGcd(int $first, int $second): int
 {
     $max = max($first, $second);
     $min = min($first, $second);
