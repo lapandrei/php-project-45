@@ -21,7 +21,7 @@ function getQuestion(): string
     return strval(getRightAnswer($randValue));
 }
 
-function getRightAnswer( int $randValue): string
+function getRightAnswer(int $randValue): string
 {
     return isPrime($randValue) ? "yes" : "no";
 }
