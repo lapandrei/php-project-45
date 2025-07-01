@@ -4,14 +4,14 @@ namespace Hexlet\Code\Games\BrainGcd;
 
 use function cli\line;
 use function Hexlet\Code\Cli\greetings;
-use function Hexlet\Code\Engine\engine;
+use function Hexlet\Code\Engine\startEngine;
 
 function run(): void
 {
     $name = greetings();
     $prefix = 'Hexlet\Code\Games\BrainGcd';
     line('Find the greatest common divisor of given numbers.');
-    engine($name, $prefix);
+    startEngine($name, $prefix);
 }
 
 function getQuestion(): string

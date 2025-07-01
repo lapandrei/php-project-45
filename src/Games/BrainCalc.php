@@ -4,14 +4,14 @@ namespace Hexlet\Code\Games\BrainCalc;
 
 use function cli\line;
 use function Hexlet\Code\Cli\greetings;
-use function Hexlet\Code\Engine\engine;
+use function Hexlet\Code\Engine\startEngine;
 
 function run(): void
 {
     $name = greetings();
     line('What is the result of the expression?');
     $prefix = 'Hexlet\Code\Games\BrainCalc';
-    engine($name, $prefix);
+    startEngine($name, $prefix);
 }
 
 function getQuestion(): string

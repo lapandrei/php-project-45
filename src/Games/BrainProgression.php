@@ -4,14 +4,14 @@ namespace Hexlet\Code\Games\BrainProgression;
 
 use function cli\line;
 use function Hexlet\Code\Cli\greetings;
-use function Hexlet\Code\Engine\engine;
+use function Hexlet\Code\Engine\startEngine;
 
 function run(): void
 {
     $name = greetings();
     $prefix = 'Hexlet\Code\Games\BrainProgression';
     line('What number is missing in the progression?');
-    engine($name, $prefix);
+    startEngine($name, $prefix);
 }
 
 function getQuestion(): string

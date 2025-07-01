@@ -2,10 +2,7 @@
     "name": "hexlet/code",
     "description": "Project Brain-Games",
     "license": "GPL-3.0-or-later",
-    "autoload": {
-        "psr-4": {
-            "Hexlet\\Code\\": "src/"
-        },
+    "autoload": {        
         "files":[
             "src/Cli.php",
             "src/Games/BrainEven.php",

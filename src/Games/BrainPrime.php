@@ -4,14 +4,14 @@ namespace Hexlet\Code\Games\BrainPrime;
 
 use function cli\line;
 use function Hexlet\Code\Cli\greetings;
-use function Hexlet\Code\Engine\engine;
+use function Hexlet\Code\Engine\startEngine;
 
 function run(): void
 {
     $name = greetings();
     $prefix = 'Hexlet\Code\Games\BrainPrime';
     line('Answer "yes" if given number is prime. Otherwise answer "no".');
-    engine($name, $prefix);
+    startEngine($name, $prefix);
 }
 
 function getQuestion(): string

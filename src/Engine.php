@@ -5,16 +5,17 @@ namespace Hexlet\Code\Engine;
 use function cli\line;
 use function cli\prompt;
 
-function engine(string $name, string $prefix): void
+function startEngine(string $name, string $prefix): void
 {
-    $i = 0;
+    $questionCounter = 0;
+    $numberOfQuestions = 3;
     $answer = '';
     $getQuestion = $prefix . '\getQuestion';
-    while ($i < 3) {
+    while ($questionCounter < $numberOfQuestions) {
         if (is_callable($getQuestion)) {
             $rightAnswer = $getQuestion();
         } else {
-            echo 'Something gone wrong, sorry.';
+            line('Something gone wrong, sorry.');
             return;
         }
         $answer = prompt("Answer");
@@ -23,7 +24,7 @@ function engine(string $name, string $prefix): void
             return;
         }
         line("Correct!");
-        $i += 1;
+        $questionCounter += 1;
     }
     line("Congratulations, {$name}!");
 }

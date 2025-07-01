@@ -4,14 +4,14 @@ namespace Hexlet\Code\Games\BrainEven;
 
 use function cli\line;
 use function Hexlet\Code\Cli\greetings;
-use function Hexlet\Code\Engine\engine;
+use function Hexlet\Code\Engine\startEngine;
 
 function run(): void
 {
     $name = greetings();
     $prefix = 'Hexlet\Code\Games\BrainEven';
     line('Answer "yes" if the number is even, otherwise answer "no".');
-    engine($name, $prefix);
+    startEngine($name, $prefix);
 }
 
 function getQuestion(): string
